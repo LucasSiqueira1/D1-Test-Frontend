@@ -1,7 +1,7 @@
-import { Container, IconsJourney, JourneyFilter, UlLista, ItemLista, ItemText, Quantidade, ContainerDetails, ListaMeio, Head } from './styles';
+import { Container, IconsJourney, JourneyFilter, UlList, ItemList, ItemText, Quantity, ContainerDetails, ListaMid, Head } from './styles';
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
-import { JourneyDetails, JourneyLista } from '../JourneyDetails';
+import { JourneyDetails, JourneyList } from '../JourneyDetails';
 
 import TableImg from '../../assets/icons/table.svg';
 import PaperPlaneImg from '../../assets/icons/paper-plane.svg';
@@ -17,32 +17,42 @@ export type NewFiltroJourney = {
 }
 
 export const Journey = () => {
-    const filtroInicial = [true, false, false, false, false, false];
+    const filterInit = [true, false, false, false, false, false];
     const [filtro, setFiltro] = useState([]);
-    const [filtroSelecionado, setFiltroSelecionado] = useState(filtroInicial);
+    const [filterSelect, setFilterSelect] = useState<typeof filterInit>(filterInit);
     const [journeys, setJourneys] = useState([]);
 
-    const FiltroTela = async () => {
-        const response = await api.get('/filter');
-        setFiltro(response.data);
+
+
+    const filterScreen = async () => {
+        try {
+            const response = await api.get('/filter');
+            setFiltro(response.data);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    const JourneyTela = async (filter = 0) => {
-        let seg = '';
-        filter === 0 ? seg = '/journey' : seg = `/journey/${filter}`;
-        const response = await api.get(seg);
-        setJourneys(response.data);
+    const journeyScreen = async (filter = 0) => {
+        try {
+            const seg = filter === 0 ? '/journey' : `/journey/${filter}`;
+            const response = await api.get(seg);
+            setJourneys(response.data);
+        } catch (error) {
+            console.log(error);
+        }
     }
 
-    useEffect(() => { FiltroTela(); JourneyTela(); }, []);
+    useEffect(() => { filterScreen(); journeyScreen(); }, []);
 
     const clickFiltro = (id: number) => {
-        let verificar = [false, false, false, false, false, false]
-        verificar[id] = true;
-        setFiltroSelecionado(verificar);
-        JourneyTela(id);
+        let verify = [false, false, false, false, false, false]
+        verify[id] = true;
+        setFilterSelect(verify);
+        journeyScreen(id);
     }
-    const IconLista = (id: number) => {
+
+    const iconList = (id: number) => {
         switch (id) {
             case 0:
                 return <IconsJourney> <img src={TableImg} alt="Enviando Ícone" /> </IconsJourney>
@@ -63,47 +73,45 @@ export const Journey = () => {
         <Container>
             <JourneyFilter>
                 <h2>Jornadas</h2>
-                <UlLista>
-                    {filtro.map((filter: NewFiltroJourney) => {
+                <UlList>
+                    {filtro?.map((filter: NewFiltroJourney) => {
                         return (
-                            <ItemLista key={filter.id} >
-                                {IconLista(filter.id)}
-                                <ItemText onClick={() => clickFiltro(filter.id)} className={filtroSelecionado[filter.id] ? 'ativo' : 'ntAtivo'}>
+                            <ItemList key={filter.id} >
+                                {iconList(filter.id)}
+                                <ItemText onClick={() => clickFiltro(filter.id)} className={filterSelect[filter.id] ? 'active' : 'noActive'}>
                                     <span>{filter.name}</span>
-                                    <Quantidade>
+                                    <Quantity>
                                         {filter.quantity}
-                                    </Quantidade>
+                                    </Quantity>
                                 </ItemText>
-                            </ItemLista>
+                            </ItemList>
                         );
                     })}
-                </UlLista>
+                </UlList>
             </JourneyFilter>
 
             <ContainerDetails>
-                <ListaMeio>
+                <ListaMid>
                     <Head>
                         <li className="name" >Nome</li>
-                        <li className="destinatario" >Destinatários</li>
-                        <li className="successo" >Sucesso</li>
+                        <li className="destiny" >Destinatários</li>
+                        <li className="success" >Sucesso</li>
                         <li className="status" >Status</li>
                     </Head>
 
-                    {journeys.map((info: JourneyLista) => {
+                    {journeys?.map((info: JourneyList) => {
                         return (
                             <JourneyDetails
                                 key={info.id}
                                 info={info}
                                 filterName={info.name}
                             >
-                                {IconLista(info.status)}
+                                {iconList(info.status)}
                             </JourneyDetails>
                         );
                     })}
-                </ListaMeio>
+                </ListaMid>
             </ContainerDetails>
-
-
         </Container>
     )
 }

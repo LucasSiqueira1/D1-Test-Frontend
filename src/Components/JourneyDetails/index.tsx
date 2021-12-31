@@ -1,15 +1,15 @@
 import { Container, Table, StatusTable } from './styles';
 
-export type JourneyLista = {
+export type JourneyList = {
     id: number;
     name: string;
     success: number;
-    recipients: string;
+    destiny: string;
     status: number;
 }
 
 type JourneyProps = {
-    info: JourneyLista;
+    info: JourneyList;
     filterName: string;
     children: any;
 }
@@ -19,7 +19,7 @@ export const JourneyDetails = ({ info, filterName, children }: JourneyProps) => 
         <Container>
             <Table>
                 <b>{info.name}</b>
-                <span className="destinatario">{info.recipients}</span>
+                <span className="destinatario">{info.destiny}</span>
                 <span className="sucesso">{info.success}</span>
 
                 <StatusTable>

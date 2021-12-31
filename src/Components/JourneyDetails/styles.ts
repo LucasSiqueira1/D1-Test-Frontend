@@ -19,7 +19,7 @@ export const Table = styled.div`
 
     display: grid;
     grid-template-columns: 8fr 3fr 1fr 3fr 2fr 4fr;
-    grid-template-areas: "name destinatario . sucesso . status";
+    grid-template-areas: "name destiny . success . status";
 
     b{
         grid-area: name;
@@ -29,12 +29,12 @@ export const Table = styled.div`
         font-size: 14px;
         font-family: 'Gotham-Book';
     }
-    .destinatario{
-        grid-area: destinatario;
+    .destiny{
+        grid-area: destiny;
         justify-self: center;
     }
-    .sucesso{
-        grid-area: sucesso;
+    .success{
+        grid-area: success;
         justify-self: center;
     }
 `;

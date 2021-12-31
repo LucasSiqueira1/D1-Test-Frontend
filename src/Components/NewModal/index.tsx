@@ -1,4 +1,4 @@
-import { Container, BoxVisible, Principal, PrincipalUp, Line, InputModal, PrincipalDown, BtnContinuar, BtnCancelar } from './styles';
+import { Container, BoxVisible, Principal, PrincipalUp, Line, InputModal, PrincipalDown, BtnContinue, BtnCancel } from './styles';
 
 type NewOpenModal = {
     isOpen: boolean;
@@ -22,8 +22,8 @@ export const NewModal = ({ clickClose, isOpen }: NewOpenModal) => {
                     </PrincipalUp>
 
                     <PrincipalDown>
-                        <BtnContinuar onClick={clickClose} >Continuar</BtnContinuar>
-                        <BtnCancelar onClick={clickClose} >Cancelar</BtnCancelar>
+                        <BtnContinue onClick={clickClose} >Continuar</BtnContinue>
+                        <BtnCancel onClick={clickClose} >Cancelar</BtnCancel>
                     </PrincipalDown>
 
                 </Principal>

@@ -32,12 +32,12 @@ export const JourneyFilter = styled.div`
     }
 `;
 
-export const UlLista = styled.ul`
+export const UlList = styled.ul`
     margin-top: 35px;
     width: 100%;
 `
 
-export const ItemLista = styled.div`
+export const ItemList = styled.div`
     margin-bottom: 18px;
 
     display: flex;
@@ -49,7 +49,7 @@ export const ItemLista = styled.div`
         height:27px;
     }
 
-    .ativo{
+    .active{
         span{
             font-family: 'Gotham-Bold';
             font-size: 16px;
@@ -61,7 +61,7 @@ export const ItemLista = styled.div`
         }
     }
 
-    .notAtivo{
+    .noActive{
         :hover{
             span{
                 color: var(--blue);
@@ -89,7 +89,7 @@ export const ItemText = styled.div`
     }
 `;
 
-export const Quantidade = styled.strong`
+export const Quantity = styled.strong`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -110,7 +110,7 @@ export const ContainerDetails = styled.main`
     align-items: center;
 `;
 
-export const ListaMeio = styled.div`
+export const ListaMid = styled.div`
     width: 800px;
     height: 100%;
     margin-top: 30px; 
@@ -123,7 +123,7 @@ export const ListaMeio = styled.div`
 export const Head = styled.ul`
     display: grid;
     grid-template-columns: 8fr 3fr 1fr 3fr 2fr 4fr;
-    grid-template-areas: "name destinatario . successo . status";
+    grid-template-areas: "name destiny . success . status";
     padding: 3px 15px;
     margin-top:-2px;
 
@@ -137,13 +137,13 @@ export const Head = styled.ul`
         grid-area: name;
     }
 
-    .destinatario{
-        grid-area: destinatario;
+    .destiny{
+        grid-area: destiny;
         justify-self: center;
     }
 
-    .successo{
-        grid-area: successo;
+    .success{
+        grid-area: success;
         justify-self: center;
     }
 

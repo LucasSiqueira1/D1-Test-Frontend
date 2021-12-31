@@ -42,6 +42,7 @@ export const SideBarIcons = styled.ul`
   justify-content: space-between;
 `;
 
+
 export const SideLowIcons = styled.ul`
   height: 24vh;
   margin-bottom:10px;
@@ -67,7 +68,6 @@ export const Icons = styled.div`
   width: 50px;
   height: 18px;
   margin-left:15px;
-
 `;
 
 

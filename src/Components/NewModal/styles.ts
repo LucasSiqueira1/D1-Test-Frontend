@@ -100,14 +100,14 @@ export const PrincipalDown = styled.div`
     justify-content: space-between;
 `;
 
-export const BtnContinuar = styled.button`
+export const BtnContinue = styled.button`
     font-family: 'Gotham-Bold';
     font-size: 18px;
     color: var(--blue);
     cursor: pointer;
 `;
 
-export const BtnCancelar = styled.button`
+export const BtnCancel = styled.button`
     font-family: 'Gotham-Bold';
     font-size: 18px;
     color: var(--text-modal);

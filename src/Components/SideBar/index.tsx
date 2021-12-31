@@ -1,3 +1,4 @@
+import React from 'react';
 import Tooltip from 'react-simple-tooltip';
 
 import { Bar, Container, Line, SideBarIcons, SideLowIcons, Icons } from './styles';
@@ -12,7 +13,6 @@ import GemImg from '../../assets/icons/gem.svg';
 import ToolsImg from '../../assets/icons/tools.svg';
 import ExchangeImg from '../../assets/icons/exchange-alt.svg';
 import SignOutAltImg from '../../assets/icons/sign-out-alt.svg';
-
 
 
 export const SideBar = () => {
@@ -84,7 +84,6 @@ export const SideBar = () => {
 
                     </Tooltip>
                 </SideBarIcons>
-
 
                 <SideLowIcons>
                     <Tooltip

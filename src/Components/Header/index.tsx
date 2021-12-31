@@ -11,10 +11,10 @@ import PlusImg from '../../assets/icons/plus.svg';
 
 
 export const Header = () => {
-    const [mostrarModal, setMostrarModal] = useState<boolean>(false);
+    const [showModal, setShowModal] = useState<boolean>(false);
 
     const clickModal = () => {
-        setMostrarModal(!mostrarModal);
+        setShowModal(!showModal);
     };
 
     return (
@@ -36,7 +36,7 @@ export const Header = () => {
                 </AcmeLogo>
             </HeaderLeft>
 
-            <NewModal isOpen={mostrarModal} clickClose={clickModal} />
+            <NewModal isOpen={showModal} clickClose={clickModal} />
 
             <Search>
                 <InputText>
