@@ -48,3 +48,22 @@
 <br/><a name="executar"></a>
 ## Como Executar
 
+```bash
+# Clone o repositório
+git clone https://github.com/LucasSiqueira1/D1-Test-Frontend.git
+
+# Entre no diretório
+cd D1-Test-Frontend
+
+# Baixe as dependências
+yarn install ou npm install
+
+# Execute a aplicação
+yarn start ou npm start
+```
+Será aberto no seu navegador, em `http://localhost:3000/` a aplicação. (Ou em outra porta, caso essa esteja em uso).
+
+
+<br/><a name="licença"></a>
+## Licença
+   Projeto sobre licença [MIT](LICENSE.md).
