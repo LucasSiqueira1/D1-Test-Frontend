@@ -1,6 +1,7 @@
 import { Container, IconsJourney, JourneyFilter, UlLista, ItemLista, ItemText, Quantidade, ContainerDetails, ListaMeio, Head } from './styles';
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
+import { JourneyDetails, JourneyLista } from '../JourneyDetails';
 
 import TableImg from '../../assets/icons/table.svg';
 import PaperPlaneImg from '../../assets/icons/paper-plane.svg';
@@ -89,6 +90,18 @@ export const Journey = () => {
                         <li className="successo" >Sucesso</li>
                         <li className="status" >Status</li>
                     </Head>
+
+                    {journeys.map((info: JourneyLista) => {
+                        return (
+                            <JourneyDetails
+                                key={info.id}
+                                info={info}
+                                filterName={info.name}
+                            >
+                                {IconLista(info.status)}
+                            </JourneyDetails>
+                        );
+                    })}
                 </ListaMeio>
             </ContainerDetails>
 
