@@ -3,7 +3,7 @@ import { NewModal } from "../NewModal";
 
 import Tooltip from "react-simple-tooltip"
 
-import { Container, HeaderLeft, User, AcmeLogo, Search, Input, BtnNewModal, BtnIcon, InputText, SearchIcon } from './styles';
+import { Container, HeaderLeft, User, AcmeLogo, Search, Input, BtnNewModal, BtnIcon, InputText, SearchIcon, Text } from './styles';
 import AcmeImg from '../../assets/images/acme-logo.png';
 import SearchImg from '../../assets/icons/search.svg';
 import PlusImg from '../../assets/icons/plus.svg';
@@ -45,11 +45,10 @@ export const Header = () => {
                 </InputText>
 
                 <BtnNewModal onClick={clickModal}>
-                    <div className="effect" />
-                    <div className="text">
+                    <Text>
                         <BtnIcon><img src={PlusImg} alt="Mais Ícone" /></BtnIcon>
                         <p>Nova Jornada</p>
-                    </div>
+                    </Text>
                 </BtnNewModal>
             </Search>
         </Container>

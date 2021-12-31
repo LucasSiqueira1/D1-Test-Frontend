@@ -1,4 +1,3 @@
-// BARREL ICON'S FONT'S
 export { default as GothamBoldEOT } from "./Gotham-Bold.eot";
 export { default as GothamBoldTTF } from "./Gotham-Bold.ttf";
 export { default as GothamBoldWOFF } from "./Gotham-Bold.woff";

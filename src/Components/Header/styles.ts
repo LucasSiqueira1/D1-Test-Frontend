@@ -107,40 +107,33 @@ export const BtnNewModal = styled.button`
     justify-content: center;
 
     background-color: var(--blue);
-
-    .text{
-        position:absolute;
-        font-family: 'gotham-book', 'sans-serif';
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        svg{
-            margin-right: 4px;
-            height:17px;
-            width: 17px;
-        }
-
-        p {
-            color: var(--white-light);
-            font-size: 14px;
-            font-weight: normal;
-            line-height:10px;
-        }
-    }  
+    
     :hover{
-        .effect{
         opacity: 1;
-        }
-    }
-    .effect{
-        width: 100%;
-        height: 100%;
-        border-radius: 4px;
-        transition: opacity 0.3s;
-        opacity: 0;
-
         background: transparent linear-gradient(90deg, #00E1FF,  var(--blue));
+    }
+`;
+
+
+
+export const Text = styled.div`
+    position:absolute;
+    font-family: 'gotham-book', 'sans-serif';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg{
+        margin-right: 4px;
+        height:17px;
+        width: 17px;
+    }
+
+    p {
+        color: var(--white-light);
+        font-size: 14px;
+        font-weight: normal;
+        line-height:10px;
     }
 `;
 
