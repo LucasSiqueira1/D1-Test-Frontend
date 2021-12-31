@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.div`
     width: 100%;
     height: 50px;
@@ -41,7 +40,7 @@ export const Table = styled.div`
 `;
 
 export const StatusTable = styled.div`
-    grid-area: status;//alinhar
+    grid-area: status;
 
     display: flex;
     align-items: center;

@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Container, BoxVisible, Principal, PrincipalUp, Line, InputModal, PrincipalDown, BtnContinuar, BtnCancelar } from './styles';
 
 type NewOpenModal = {

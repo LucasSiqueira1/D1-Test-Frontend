@@ -1,5 +1,3 @@
-import React from 'react';
-
 import { Container, Table, StatusTable } from './styles';
 
 export type JourneyLista = {

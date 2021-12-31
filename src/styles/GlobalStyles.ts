@@ -40,6 +40,5 @@ export const GlobalStyle = createGlobalStyle`
     --text-modal:#c5c8d1;
     --span-modal: #b0b1b4;
     --text-lighter: #9196AB;
-    
   }
 `;

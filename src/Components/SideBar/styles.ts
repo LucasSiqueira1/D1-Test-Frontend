@@ -1,9 +1,8 @@
 import styled from 'styled-components';
 
-
 export const Container = styled.nav`
   width: 100%;
-  height: calc(100vh - 9px); //calc para aparecer a barra azul no canto inferior do sidebar!
+  height: calc(100vh - 9px);
   padding: 50px 0;
   
   display: flex;

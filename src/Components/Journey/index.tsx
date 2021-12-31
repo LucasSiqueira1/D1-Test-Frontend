@@ -17,7 +17,6 @@ export type NewFiltroJourney = {
 }
 
 export const Journey = () => {
-    //inicializando com a primeira opção marcada
     const filtroInicial = [true, false, false, false, false, false];
     const [filtro, setFiltro] = useState([]);
     const [filtroSelecionado, setFiltroSelecionado] = useState(filtroInicial);
@@ -32,17 +31,16 @@ export const Journey = () => {
         let seg = '';
         filter === 0 ? seg = '/journey' : seg = `/journey/${filter}`;
         const response = await api.get(seg);
-        //console.log(response.data)
         setJourneys(response.data);
     }
 
-    useEffect(() => { FiltroTela(); JourneyTela(); }, []); //executa uma vez
+    useEffect(() => { FiltroTela(); JourneyTela(); }, []);
 
     const clickFiltro = (id: number) => {
         let verificar = [false, false, false, false, false, false]
         verificar[id] = true;
         setFiltroSelecionado(verificar);
-        JourneyTela(id);//retorna o id mostrado na tela
+        JourneyTela(id);
     }
     const IconLista = (id: number) => {
         switch (id) {

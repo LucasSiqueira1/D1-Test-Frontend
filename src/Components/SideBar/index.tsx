@@ -1,4 +1,3 @@
-import React from 'react';
 import Tooltip from 'react-simple-tooltip';
 
 import { Bar, Container, Line, SideBarIcons, SideLowIcons, Icons } from './styles';
