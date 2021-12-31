@@ -79,4 +79,4 @@ Será aberto no seu navegador, em `http://localhost:3000/` a aplicação. (Ou em
 
 <br/><a name="licenca"></a>
 ## Licença
-   Projeto sobre licença [MIT](LICENSE.md).
+   Projeto sobre licença [MIT](LICENSE.md)
