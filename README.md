@@ -8,17 +8,43 @@
 #
 
 <p align="center">
-  <a href="#-sobre">Sobre</a>&nbsp;&nbsp; - &nbsp;&nbsp;
-  <a href="#-protótipo">Protótipo</a>&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;
+  <a href="#sobre">Sobre</a>&nbsp;&nbsp; - &nbsp;&nbsp;
+  <a href="#prototipo">Protótipo</a>&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;
   <a href="#funcionalidades">Funcionalidades e Tecnologias</a>&nbsp;&nbsp; - &nbsp;&nbsp;
   <a href="#executar">Como executar</a>&nbsp;&nbsp; - &nbsp;&nbsp;
   <a href="#licença">Licença</a>
 </p>
 
+
 #
 
 ## Sobre
-   Teste proposto pela D1, onde visa a confecção de uma aplicação frontend, com base em ReactJS. Avaliando os conhecimentos e as habilidades, seja em ReactJS, outras tecnologias e outras bibliotecas.
+   <p>
+      <a name="sobre"></a>
+      Teste proposto pela D1, onde visa a confecção de uma aplicação frontend, com base em ReactJS. Avaliando os conhecimentos e as habilidades, seja em ReactJS, outras tecnologias e outras bibliotecas.
+   </p> <br/>
    
+   <a name="prototipo"></a>
 ## Protótipo
-   Para acessar o protótipo com o layout proposto, acesse [esse link](https://xd.adobe.com/view/f41cc902-3388-42d8-826a-8cbd874656bb-a14f/).
+   
+   Para acessar o protótipo com o layout proposto, acesse [esse link](https://xd.adobe.com/view/f41cc902-3388-42d8-826a-8cbd874656bb-a14f/)
+
+   
+<br/><a name="funcionalidades"></a>
+## Funcionalidades e Tecnologias
+   <p>
+      Dado a necessidade de consumir uma API que contém dados sobre jornadas, precisamos manipular a mesma e exibi-la em um filtro e uma tabela. Para tal situação, foi utilizado o axios, além de que, tem se um modal, que abre ao clicar no botão "Nova Jornada". Foi também implementado o header e a sidebar com icones, o filtro das jornadas e a tabela com as jornadas de forma detalhadas, abaixo tem as tecnologias utilizadas: <br/>
+   
+   <ul>
+      <li>ReactJS</li>
+      <li>TypeScript</li>
+      <li>Axios</li>
+      <li>Styled Components</li>
+      <li>Tooltip</li>
+   </ul>
+   </p>
+   
+   
+<br/><a name="executar"></a>
+## Como Executar
+
