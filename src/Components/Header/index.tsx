@@ -6,6 +6,7 @@ import SearchImg from '../../assets/icons/search.svg';
 import PlusImg from '../../assets/icons/plus.svg';
 
 export const Header = () => {
+
     return (
         <Container>
             <HeaderLeft>
