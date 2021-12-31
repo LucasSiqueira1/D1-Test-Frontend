@@ -1,5 +1,5 @@
 import React from 'react';
-import { Dashboard } from './Components/Dashboard';
+import { Dashboard } from './pages/Dashboard';
 import { GlobalStyle } from './styles/GlobalStyles';
 
 function App() {

@@ -1,7 +1,6 @@
-import { Header } from '../Header';
-import { Journey } from '../Journey';
-import { SideBar } from '../SideBar';
-
+import { Header } from '../../Components/Header';
+import { Journey } from '../../Components/Journey';
+import { SideBar } from '../../Components/SideBar';
 import { Container, Content } from './styles';
 
 export const Dashboard = () => {
