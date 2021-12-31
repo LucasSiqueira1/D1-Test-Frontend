@@ -1,7 +1,9 @@
 import Tooltip from "react-simple-tooltip"
 
-import { Container, HeaderLeft, User, AcmeLogo } from './styles';
+import { Container, HeaderLeft, User, AcmeLogo, Search, Input, BtnNewModal, BtnIcon, InputText, SearchIcon } from './styles';
 import AcmeImg from '../../assets/images/acme-logo.png';
+import SearchImg from '../../assets/icons/search.svg';
+import PlusImg from '../../assets/icons/plus.svg';
 
 export const Header = () => {
     return (
@@ -22,6 +24,21 @@ export const Header = () => {
                     <img src={AcmeImg} alt="Logo Empresa Acme." />
                 </AcmeLogo>
             </HeaderLeft>
+
+            <Search>
+                <InputText>
+                    <SearchIcon><img src={SearchImg} alt="Pesquisar Ícone" /></SearchIcon>
+                    <Input type="text" placeholder="Buscar" />
+                </InputText>
+
+                <BtnNewModal >
+                    <div className="effect" />
+                    <div className="text">
+                        <BtnIcon><img src={PlusImg} alt="Mais Ícone" /></BtnIcon>
+                        <p>Nova Jornada</p>
+                    </div>
+                </BtnNewModal>
+            </Search>
         </Container>
     )
 }
