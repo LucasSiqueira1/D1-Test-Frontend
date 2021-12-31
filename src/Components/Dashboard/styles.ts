@@ -7,8 +7,8 @@ export const Container = styled.div`
 
 export const Content = styled.div`
     width: 100%;
-    margin-right: 6vw;
-    margin-left: 6vw;
+    margin-right: 10vw;
+    margin-left: 12vw;
     position: relative;
     
     display: flex;
