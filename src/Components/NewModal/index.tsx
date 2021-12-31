@@ -2,11 +2,17 @@ import React from 'react';
 
 import { Container, BoxVisible, Principal, PrincipalUp, Line, InputModal, PrincipalDown, BtnContinuar, BtnCancelar } from './styles';
 
-export const NewModal = () => {
+type NewOpenModal = {
+    isOpen: boolean;
+    clickClose: any;
+}
+
+export const NewModal = ({ clickClose, isOpen }: NewOpenModal) => {
+    const Modal = isOpen ? "display-flex" : "display-none";
 
     return (
         <Container >
-            <BoxVisible >
+            <BoxVisible className={Modal}>
                 <Principal >
                     <PrincipalUp>
                         <h3>Nova Jornada</h3>
@@ -18,8 +24,8 @@ export const NewModal = () => {
                     </PrincipalUp>
 
                     <PrincipalDown>
-                        <BtnContinuar >Continuar</BtnContinuar>
-                        <BtnCancelar >Cancelar</BtnCancelar>
+                        <BtnContinuar onClick={clickClose} >Continuar</BtnContinuar>
+                        <BtnCancelar onClick={clickClose} >Cancelar</BtnCancelar>
                     </PrincipalDown>
 
                 </Principal>
