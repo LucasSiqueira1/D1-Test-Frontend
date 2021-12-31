@@ -100,3 +100,54 @@ export const Quantidade = styled.strong`
     background-color: var(--icons-white);
     color: var(--text-lighter);
 `;
+
+export const ContainerDetails = styled.main`
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+`;
+
+export const ListaMeio = styled.div`
+    width: 800px;
+    height: 100%;
+    margin-top: 55px; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+`;
+
+export const Head = styled.ul`
+    display: grid;
+    grid-template-columns: 8fr 3fr 1fr 3fr 2fr 4fr;
+    grid-template-areas: "name destinatario . successo . status";
+    padding: 3px 15px;
+    margin-top:-2px;
+
+    li {
+        color: var(--text-lighter);
+        font-family: 'Gotham-Book';
+        font-size: 15px;
+    }
+
+    .name{
+        grid-area: name;
+    }
+
+    .destinatario{
+        grid-area: destinatario;
+        justify-self: center;
+    }
+
+    .successo{
+        grid-area: successo;
+        justify-self: center;
+    }
+
+    .status{
+        grid-area: status;
+    }
+`;

@@ -1,4 +1,4 @@
-import { Container, IconsJourney, JourneyFilter, UlLista, ItemLista, ItemText, Quantidade } from './styles';
+import { Container, IconsJourney, JourneyFilter, UlLista, ItemLista, ItemText, Quantidade, ContainerDetails, ListaMeio, Head } from './styles';
 import { useEffect, useState } from 'react';
 import { api } from '../../services/api';
 
@@ -14,7 +14,6 @@ export type NewFiltroJourney = {
     name: string;
     quantity: number;
 }
-
 
 export const Journey = () => {
     //inicializando com a primeira opção marcada
@@ -81,6 +80,19 @@ export const Journey = () => {
                     })}
                 </UlLista>
             </JourneyFilter>
+
+            <ContainerDetails>
+                <ListaMeio>
+                    <Head>
+                        <li className="name" >Nome</li>
+                        <li className="destinatario" >Destinatários</li>
+                        <li className="successo" >Sucesso</li>
+                        <li className="status" >Status</li>
+                    </Head>
+                </ListaMeio>
+            </ContainerDetails>
+
+
         </Container>
     )
 }
