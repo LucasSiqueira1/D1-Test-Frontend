@@ -23,13 +23,12 @@ export const Journey = () => {
     const [journeys, setJourneys] = useState([]);
 
 
-
     const filterScreen = async () => {
         try {
             const response = await api.get('/filter');
             setFiltro(response.data);
         } catch (error) {
-            console.log(error);
+            notifyError(error);
         }
     }
 
@@ -39,7 +38,7 @@ export const Journey = () => {
             const response = await api.get(seg);
             setJourneys(response.data);
         } catch (error) {
-            console.log(error);
+            notifyError(error);
         }
     }
 
@@ -114,4 +113,8 @@ export const Journey = () => {
             </ContainerDetails>
         </Container>
     )
+}
+
+function notifyError(error: unknown) {
+    throw new Error('Error occurred');
 }
