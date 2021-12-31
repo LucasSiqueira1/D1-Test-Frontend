@@ -21,7 +21,7 @@ export const Container = styled.nav`
 
 export const Bar = styled.div`
   position: fixed;
-  width: 100px;
+  width: 90px;
   height: 100vh;
 
   display: flex;
