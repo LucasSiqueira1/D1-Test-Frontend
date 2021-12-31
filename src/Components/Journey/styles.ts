@@ -113,7 +113,7 @@ export const ContainerDetails = styled.main`
 export const ListaMeio = styled.div`
     width: 800px;
     height: 100%;
-    margin-top: 55px; 
+    margin-top: 30px; 
 
     display: flex;
     flex-direction: column;
