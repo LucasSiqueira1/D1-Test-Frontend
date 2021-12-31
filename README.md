@@ -7,16 +7,29 @@
 
 #
 
+
 <p align="center">
   <a href="#sobre">Sobre</a>&nbsp;&nbsp; - &nbsp;&nbsp;
   <a href="#prototipo">Protótipo</a>&nbsp;&nbsp;&nbsp; - &nbsp;&nbsp;&nbsp;
   <a href="#funcionalidades">Funcionalidades e Tecnologias</a>&nbsp;&nbsp; - &nbsp;&nbsp;
   <a href="#executar">Como executar</a>&nbsp;&nbsp; - &nbsp;&nbsp;
-  <a href="#licença">Licença</a>
+  <a href="#licenca">Licença</a>
 </p>
 
 
 #
+
+<br/>
+Para acessar a aplicação já hospedada, acesse esse link: https://d1-test-frontend.vercel.app/
+
+
+<div align="center">
+   <br/>
+   <img src="https://user-images.githubusercontent.com/82816967/147839080-0f0a3547-695c-450a-870a-73af86ea862b.png" width=""/>
+</div>
+
+
+<br/>
 
 ## Sobre
    <p>
@@ -33,7 +46,7 @@
 <br/><a name="funcionalidades"></a>
 ## Funcionalidades e Tecnologias
    <p>
-      Dado a necessidade de consumir uma API que contém dados sobre jornadas, precisamos manipular a mesma e exibi-la em um filtro e uma tabela. Para tal situação, foi utilizado o axios, além de que, tem se um modal, que abre ao clicar no botão "Nova Jornada". Foi também implementado o header e a sidebar com icones, o filtro das jornadas e a tabela com as jornadas de forma detalhadas, abaixo tem as tecnologias utilizadas: <br/>
+      Dado a necessidade de consumir uma API que contém dados sobre jornadas, precisamos manipular a mesma e exibi-la em um filtro e uma tabela. Para tal situação, foi utilizado o axios, além de que, tem se um modal, que abre ao clicar no botão "Nova Jornada". Foi também implementado o header e a sidebar com icones, o filtro das jornadas e a tabela com as jornadas de forma detalhada, abaixo tem as tecnologias utilizadas: <br/>
    
    <ul>
       <li>ReactJS</li>
@@ -61,9 +74,9 @@ yarn install ou npm install
 # Execute a aplicação
 yarn start ou npm start
 ```
-Será aberto no seu navegador, em `http://localhost:3000/` a aplicação. (Ou em outra porta, caso essa esteja em uso).
+Será aberto no seu navegador, em `http://localhost:3000/` a aplicação. (Ou em outra porta, caso essa já esteja em uso).
 
 
-<br/><a name="licença"></a>
+<br/><a name="licenca"></a>
 ## Licença
    Projeto sobre licença [MIT](LICENSE.md).
