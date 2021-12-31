@@ -31,3 +31,72 @@ export const JourneyFilter = styled.div`
         font-size: 19px;
     }
 `;
+
+export const UlLista = styled.ul`
+    margin-top: 35px;
+    width: 100%;
+`
+
+export const ItemLista = styled.div`
+    margin-bottom: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    strong{ 
+        width:27px;
+        height:27px;
+    }
+
+    .ativo{
+        span{
+            font-family: 'Gotham-Bold';
+            font-size: 16px;
+            color: var(--blue);
+        }
+        strong{
+            background-color: var(--blue);
+            color: var(--white-light);
+        }
+    }
+
+    .notAtivo{
+        :hover{
+            span{
+                color: var(--blue);
+            }
+            strong{
+                background-color: var(--box-lighter);
+            }
+        }
+    }
+`;
+
+export const ItemText = styled.div`
+    width: 100%;
+    height: 25px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    span{
+        font-family: 'Gotham-Book';
+        font-size: 17px;
+        color: var(--text-color);
+    }
+`;
+
+export const Quantidade = styled.strong`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border-radius: 50%; 
+    font-size: 13px;
+
+    background-color: var(--icons-white);
+    color: var(--text-lighter);
+`;
