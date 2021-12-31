@@ -11,7 +11,7 @@ import PlusImg from '../../assets/icons/plus.svg';
 
 
 export const Header = () => {
-    const [mostrarModal, setMostrarModal] = useState(false);
+    const [mostrarModal, setMostrarModal] = useState<boolean>(false);
 
     const clickModal = () => {
         setMostrarModal(!mostrarModal);
